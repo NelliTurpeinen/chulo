@@ -55,6 +55,7 @@ CREATE TABLE `dish` (
   `name` varchar(45) DEFAULT NULL,
   `price` varchar(45) DEFAULT NULL,
   `origin` varchar(45) DEFAULT NULL,
+  `image` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`iddish`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -65,7 +66,7 @@ CREATE TABLE `dish` (
 
 LOCK TABLES `dish` WRITE;
 /*!40000 ALTER TABLE `dish` DISABLE KEYS */;
-INSERT INTO `dish` VALUES (1,'Chicken Sekuwa','7.60€','Nepal'),(2,'Nepalese Chicken Noodle Soup','6.50€','Nepal'),(3,'Thakali Food','9.30€','Nepal'),(4,'Yomari','5.70€','Nepal'),(5,'Sel Roti','5.05€','Nepal'),(6,'Kheer','6.20€','Nepal'),(7,'Momo','5.70€','Nepal'),(8,'Dhindo Set','8.00€','Nepal'),(9,'Choila','6.15€','Nepal'),(10,'Kwati','6.00€','Nepal'),(11,'Nepali Bara','4.85€','Nepal'),(12,'Classic Nepali Taas','6.82€','Nepal'),(13,'Salmon Soup','5.80€','Finland'),(14,'Karelian Pies','6.00€','Finland'),(15,'Spinach Soup','5.10€','Finland'),(16,'Pyttipannu','6.20€','Finland'),(17,'Sautéed Reindeer','7.40€','Finland'),(18,'Pea Soup','5.30€','Finland');
+INSERT INTO `dish` VALUES (1,'Chicken Sekuwa','7.60€','Nepal','Chicken Sekuwa.jpg'),(2,'Nepalese Chicken Noodle Soup','6.50€','Nepal','Nepali-Thukpa.jpg'),(3,'Thakali Food','9.30€','Nepal','Thakali-Khana_.jpg'),(4,'Yomari','5.70€','Nepal','yomari.jpeg'),(5,'Sel Roti','5.05€','Nepal','Sel Roti.jpg'),(6,'Kheer','6.20€','Nepal','Khir-.jpg'),(7,'Momo','5.70€','Nepal','momo(dumpling).jpg'),(8,'Dhindo Set','8.00€','Nepal','Dhido-set.jpg'),(9,'Choila','6.15€','Nepal','choila.jpeg'),(10,'Kwati','6.00€','Nepal','Kwati.jfif'),(11,'Nepali Bara','4.85€','Nepal','Nepali Bara.jpg'),(12,'Classic Nepali Taas','6.82€','Nepal','tass-set.png'),(13,'Salmon Soup','5.80€','Finland','valkoinen-kalakaitto.jpg'),(14,'Karelian Pies','6.00€','Finland','FinnishPies_binary_.png'),(15,'Spinach Soup','5.10€','Finland','pinaattikeitto-1.jpg'),(16,'Pyttipannu','6.20€','Finland','pyttipannu.jpg'),(17,'Sautéed Reindeer','7.40€','Finland','poronkaristys.jpg'),(18,'Pea Soup','5.30€','Finland','hernekeitto.jpg');
 /*!40000 ALTER TABLE `dish` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,4 +110,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-24 15:07:55
+-- Dump completed on 2021-05-03 16:47:03
